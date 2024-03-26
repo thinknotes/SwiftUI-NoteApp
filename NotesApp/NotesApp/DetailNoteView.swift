@@ -8,12 +8,15 @@
 import SwiftUI
 
 struct DetailNoteView: View {
+    //note title
     @State var notetitle = ""
+    //bio
     @State var bio = ""
     var body: some View {
         NavigationView {
             VStack {
-               Text("")
+                //Shows notes bio
+               Text("\(bio)")
                     .padding()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
                     .background(Color(.systemGray6))
@@ -23,6 +26,7 @@ struct DetailNoteView: View {
                 
             }
             .navigationTitle("\(notetitle)")
+            //Shows notetitle
         }
     }
 }
